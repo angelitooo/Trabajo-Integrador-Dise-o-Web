@@ -1,0 +1,6 @@
+Reflexión:
+Al implementar el CRUD lo más sencillo fue definir las rutas y el flujo: listar, crear, completar y borrar.
+La parte más delicada fue el manejo de concurrencia y persistencia simple usando un archivo JSON (habría que
+cuidar bloqueos si varias peticiones escriben a la vez). En el frontend lo más trabajoso fue manejar
+estados (cargando/error/vacío) de forma consistente.
+Para mejorar: agregar validaciones más robustas, tests y un mecanismo de locking en el backend o migrar a DB.
